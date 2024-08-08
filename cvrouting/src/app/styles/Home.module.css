@@ -1,0 +1,47 @@
+/* src/app/styles/Home.module.css */
+
+/* Home page general styling */
+.homePage {
+    text-align: center;
+  }
+  
+  .homePage h1 {
+    font-size: 2.5em; /* Adjust the size as needed */
+    font-weight: bold;
+  }
+  
+  .homePage p {
+    font-size: 1.5em; /* Adjust the size as needed */
+  }
+  
+  /* Home page service cards styling */
+  .services {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .serviceCard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .serviceCard h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .serviceCard p {
+    margin-bottom: 20px;
+  }
+  
+  /* Service Images styling */
+  .serviceImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px; /* Adjust this value for desired spacing */
+  }
+  

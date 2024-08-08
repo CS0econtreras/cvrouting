@@ -1,0 +1,66 @@
+/* Top Header styling */
+.topHeader {
+    background-color: #333;
+    color: white;
+  }
+
+  .headerInfo img {
+    padding-left: 20px;
+    width: 200px; /* Updated width for the logo */
+    height: 100px; /* Maintains the aspect ratio */
+  }
+  
+  /* Header Info styling */
+  .headerInfo {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .headerLogo {
+    padding-left: 20px;
+  }
+  
+  .headerInfo h1 {
+    margin: 0;
+    text-align: center;
+    color: #61dafb;
+    flex-grow: 1;
+    font-size: 4em;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  
+  .headerInfo h2 {
+    margin: 0;
+    color: white;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-top: 30px;
+    font-size: 2.2em;
+  }
+  
+  /* Header Navigation styling */
+  .headerNav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .headerNav li {
+    margin-right: 20px;
+    color: #61dafb;
+    font-size: 2em;
+  }
+  
+  .headerNav li a {
+    color: white;
+    padding: 10px;
+    display: block;
+  }
+  
+  .headerNav li a:hover {
+    background-color: #111;
+  }
+  
