@@ -20,22 +20,41 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     // Basic validation
-    if (!formData.name || !formData.email || !formData.message) {
+    if (!formData.name || !formData.email || !formData.message || !formData.phone) {
       alert('Please fill out all required fields.');
       return;
     }
-
-    emailjs.send('service_thpe8ji', 'template_qv71f38', formData, 'FK3zYr6_S9SnnIHx5')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Message sent successfully!');
-      }, (err) => {
-        console.log('FAILED...', err);
-        alert('Failed to send the message. Please try again later.');
+  
+    // Mapping form data to template variables
+    const templateParams = {
+      to_name: 'Cosme',  // This should be the name of the recipient
+      from_name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      message: formData.message,
+    };
+  
+    emailjs.send('service_thpe8ji', 'template_qv71f38', templateParams, 'FK3zYr6_S9SnnIHx5')
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Message sent successfully!');
+      
+      // Clear the input fields
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        message: '',
       });
+    }, (err) => {
+      console.log('FAILED...', err);
+      alert('Failed to send the message. Please try again later.');
+    });
+
   };
+  
 
   return (
     <div className={styles.contactContainer}>
