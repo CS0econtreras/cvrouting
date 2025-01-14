@@ -1,0 +1,26 @@
+/* About Section */
+.aboutSection {
+    background-color: #f8f9fa; /* Light background for a clean look */
+    padding: 50px 20px; /* Add spacing around the section */
+  }
+  
+  .container {
+    max-width: 800px; /* Limit content width for readability */
+    margin: 0 auto; /* Center the content */
+    text-align: center; /* Center-align the content */
+  }
+  
+  .title {
+    font-size: 2.5em; /* Large title font */
+    font-weight: bold; /* Emphasize the title */
+    color: #333; /* Darker color for readability */
+    margin-bottom: 20px; /* Space below the title */
+    text-transform: uppercase; /* Optional: Capitalize the title */
+  }
+  
+  .text {
+    font-size: 1.2em; /* Slightly larger font for content */
+    line-height: 1.8; /* Increase line spacing for readability */
+    color: #555; /* Soft gray for body text */
+  }
+  

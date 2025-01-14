@@ -1,0 +1,69 @@
+/* Header container */
+.topHeader {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  /* Header Info Section */
+  .headerInfo {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .headerInfo img {
+    width: 150px; /* Reduce logo size on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+  }
+  
+  .headerInfo h1 {
+    font-size: 2.5em; /* Adjust font size for smaller screens */
+  }
+  
+  .headerInfo h2 {
+    font-size: 1.5em;
+    margin-top: 5px;
+  }
+  
+  /* Navigation Styling */
+  .headerNav ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .headerNav li {
+    margin: 0 10px;
+  }
+  
+  .headerNav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  @media (max-width: 768px) {
+    .headerInfo h1 {
+      font-size: 2em; /* Smaller font for phones */
+    }
+  
+    .headerInfo h2 {
+      font-size: 1.2em;
+    }
+  
+    .headerNav li a {
+      font-size: 1em; /* Smaller font for navigation */
+    }
+  }
+  

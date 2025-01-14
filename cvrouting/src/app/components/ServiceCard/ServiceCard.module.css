@@ -1,0 +1,88 @@
+/* Top Header styling */
+.topHeader {
+    background-color: #333;
+    color: white;
+  }
+  
+  Header Info styling
+  .headerInfo {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Center vertically */
+  }
+  
+  .headerInfo img {
+    padding-left: 20px;
+    width: 200px; /* Default size  */
+    height: auto; /* Maintain aspect ratio  */
+  }
+  
+  .headerInfo h1 {
+    margin: 0;
+    text-align: center;
+    color: #61dafb;
+    flex-grow: 1;
+    font-size: 4em;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  
+  .headerInfo h2 {
+    margin: 0;
+    color: white;
+    padding-top: 30px;
+    padding-right: 20px;
+    font-size: 2.2em;
+  }
+  
+  /* Header Navigation styling */
+  .headerNav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .headerNav li {
+    margin-right: 20px;
+    color: #61dafb;
+    font-size: 2em;
+  }
+  
+  .headerNav li a {
+    color: white;
+    padding: 10px;
+    display: block;
+  }
+  
+  .headerNav li a:hover {
+    background-color: #111;
+  }
+  
+  /* Responsive styles for phones */
+  @media (max-width: 768px) {
+    .headerInfo img {
+      width: 150px; /* Reduce logo size for phones */
+    }
+  
+    .headerInfo h1 {
+      font-size: 2.5em; /* Scale down font size */
+      padding-left: 0; /* Remove extra padding */
+    }
+  
+    .headerInfo h2 {
+      font-size: 1.5em; /* Reduce size for smaller screens*/
+      padding-top: 10px; /* Adjust spacing */
+      padding-right: 0;
+    }
+  
+    .headerNav ul {
+      flex-wrap: wrap; /*Allow navigation links to wrap if needed */
+    }
+  
+    .headerNav li {
+      font-size: 1.5em; /* Slightly smaller font size for phones */
+      margin-right: 10px;
+    }
+  }
